@@ -10,7 +10,9 @@
 		"eslint:check": "eslint .",
 		"lint": "npm run eslint:check && npm run prettier:check",
 		"lint:fix": "npm run eslint:check && npm run prettier:fix",
-		"prepare": "husky install"
+		"prepare": "husky install",
+		"start": "node src/index.js",
+		"dev": "nodemon src/index.js"
 	},
 	"config": {
 		"commitizen": {
@@ -42,6 +44,7 @@
 		"eslint": "^8.17.0",
 		"husky": "^8.0.0",
 		"lint-staged": "^13.0.0",
+		"nodemon": "^2.0.19",
 		"prettier": "^2.6.2"
 	},
 	"type": "module",

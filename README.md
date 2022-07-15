@@ -1,1 +1,1 @@
-# Basic JS Template
+# NodeJS Template

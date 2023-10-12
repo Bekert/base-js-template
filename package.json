@@ -4,7 +4,7 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"commit": "git-cz",
+		"commit": "cz",
 		"prettier:check": "prettier --check .",
 		"prettier:fix": "prettier --write .",
 		"eslint:check": "eslint .",
@@ -16,11 +16,13 @@
 	},
 	"config": {
 		"commitizen": {
-			"path": "cz-customizable"
-		},
-		"cz-customizable": {
-			"config": "./configs/commiting/commitizen.cjs"
+			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	},
 	"lint-staged": {
 		"*.{html,md,json,yml,yaml,js,css,scss}": "npm run lint:fix"
@@ -35,17 +37,18 @@
 		"extends": "./configs/linting/.babelrc.json"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.18.2",
-		"@babel/eslint-parser": "^7.18.2",
-		"@babel/plugin-syntax-import-assertions": "^7.17.12",
-		"@commitlint/cli": "^11.0.0",
-		"commitizen": "^4.2.4",
-		"cz-customizable": "^6.3.0",
-		"eslint": "^8.17.0",
-		"husky": "^8.0.0",
-		"lint-staged": "^13.0.0",
-		"nodemon": "^2.0.19",
-		"prettier": "^2.6.2"
+		"@babel/core": "^7.23.2",
+		"@babel/eslint-parser": "^7.22.15",
+		"@babel/plugin-syntax-import-assertions": "^7.22.5",
+		"@commitlint/cli": "^17.7.2",
+		"@commitlint/config-conventional": "^17.7.0",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
+		"eslint": "^8.51.0",
+		"husky": "^8.0.3",
+		"lint-staged": "^13.3.0",
+		"nodemon": "^3.0.1",
+		"prettier": "^2.8.8"
 	},
 	"type": "module",
 	"repository": {

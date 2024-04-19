@@ -37,18 +37,18 @@
 		"extends": "./configs/linting/.babelrc.json"
 	},
 	"devDependencies": {
-		"@babel/core": "^7.23.2",
-		"@babel/eslint-parser": "^7.22.15",
-		"@babel/plugin-syntax-import-assertions": "^7.22.5",
-		"@commitlint/cli": "^17.7.2",
-		"@commitlint/config-conventional": "^17.7.0",
+		"@babel/core": "^7.24.4",
+		"@babel/eslint-parser": "^7.24.1",
+		"@babel/plugin-syntax-import-assertions": "^7.24.1",
+		"@commitlint/cli": "^19.2.2",
+		"@commitlint/config-conventional": "^19.2.2",
 		"commitizen": "^4.3.0",
 		"cz-conventional-changelog": "^3.3.0",
-		"eslint": "^8.51.0",
+		"eslint": "^8.57.0",
 		"husky": "^8.0.3",
-		"lint-staged": "^13.3.0",
-		"nodemon": "^3.0.1",
-		"prettier": "^2.8.8"
+		"lint-staged": "^15.2.2",
+		"nodemon": "^3.1.0",
+		"prettier": "^3.2.5"
 	},
 	"type": "module",
 	"repository": {

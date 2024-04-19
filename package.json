@@ -39,7 +39,7 @@
 	"devDependencies": {
 		"@babel/core": "^7.24.4",
 		"@babel/eslint-parser": "^7.24.1",
-		"@babel/plugin-syntax-import-assertions": "^7.24.1",
+		"@babel/plugin-proposal-json-modules": "^7.24.3",
 		"@commitlint/cli": "^19.2.2",
 		"@commitlint/config-conventional": "^19.2.2",
 		"commitizen": "^4.3.0",

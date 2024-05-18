@@ -5,6 +5,7 @@
 	"main": "index.js",
 	"scripts": {
 		"commit": "cz",
+		"pre-commit": "lint-staged",
 		"prettier:check": "prettier --check .",
 		"prettier:fix": "prettier --write .",
 		"eslint:check": "eslint .",
@@ -25,7 +26,8 @@
 		]
 	},
 	"lint-staged": {
-		"*.{html,md,json,yml,yaml,js,css,scss}": "npm run lint:fix"
+		"*.{js,jsx,ts,tsx,json,css,html}": "prettier --write",
+		"*.{js,jsx,ts,tsx}": "eslint"
 	},
 	"prettier": "./configs/formatting/.prettierrc.json",
 	"eslintConfig": {

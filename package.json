@@ -29,15 +29,6 @@
 		"*.{js,jsx,ts,tsx,json,css,html}": "prettier --write",
 		"*.{js,jsx,ts,tsx}": "eslint"
 	},
-	"prettier": "./configs/formatting/.prettierrc.json",
-	"eslintConfig": {
-		"extends": [
-			"./configs/linting/.eslintrc.json"
-		]
-	},
-	"babel": {
-		"extends": "./configs/linting/.babelrc.json"
-	},
 	"devDependencies": {
 		"@babel/core": "^7.24.4",
 		"@babel/eslint-parser": "^7.24.1",

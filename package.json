@@ -13,7 +13,7 @@
 		"lint:fix": "npm run eslint:check && npm run prettier:fix",
 		"prepare": "husky",
 		"start": "node --no-warnings=ExperimentalWarning src/index.js",
-		"dev": "nodemon --no-warnings=ExperimentalWarning src/index.js"
+		"dev": "node --no-warnings=ExperimentalWarning --watch src/index.js"
 	},
 	"config": {
 		"commitizen": {
@@ -42,7 +42,6 @@
 		"globals": "^15.2.0",
 		"husky": "^9.0.11",
 		"lint-staged": "^15.2.2",
-		"nodemon": "^3.1.0",
 		"prettier": "^3.2.5"
 	},
 	"type": "module",

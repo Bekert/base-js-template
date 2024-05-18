@@ -1,6 +1,7 @@
 import babelParser from '@babel/eslint-parser'
 import js from '@eslint/js'
 import globals from 'globals'
+import stylistic from '@stylistic/eslint-plugin'
 
 export default [
 	js.configs.recommended,
@@ -19,18 +20,21 @@ export default [
 				...globals.node
 			}
 		},
+		plugins: {
+			'@stylistic': stylistic
+		},
 		rules: {
 			'no-unused-vars': ['warn', { argsIgnorePattern: '^_' }],
-			semi: ['error', 'never'],
-			'max-len': ['warn', { code: 100 }],
-			quotes: ['error', 'single', { avoidEscape: true }],
-			'jsx-quotes': ['error', 'prefer-single'],
-			'quote-props': ['error', 'as-needed'],
-			'comma-dangle': ['error', 'never'],
-			'object-curly-spacing': ['error', 'always'],
-			'array-bracket-spacing': ['error', 'never'],
-			'arrow-parens': ['error', 'as-needed']
+			'@stylistic/semi': ['error', 'never'],
+			'@stylistic/max-len': ['warn', { code: 100 }],
+			'@stylistic/quotes': ['error', 'single', { avoidEscape: true }],
+			'@stylistic/jsx-quotes': ['error', 'prefer-single'],
+			'@stylistic/quote-props': ['error', 'as-needed'],
+			'@stylistic/comma-dangle': ['error', 'never'],
+			'@stylistic/object-curly-spacing': ['error', 'always'],
+			'@stylistic/array-bracket-spacing': ['error', 'never'],
+			'@stylistic/arrow-parens': ['error', 'as-needed']
 		},
-		ignores: ['dist', 'build', 'node_modules']
+		ignores: ['dist/', 'build/', '/built']
 	}
 ]
